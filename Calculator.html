@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Distance Calculator</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>
+      2D Points Distance Calculator
+    </h1>
+  </header>
+  <section>
+    <ul class="inputText">
+      <li>
+        <label class="labelX1">X1</label> &nbsp; &nbsp;&nbsp;<input type="number" class="numinput" id="x1"
+          placeholder="Enter value of x1" size="20">
+      </li>
+      <li>
+        <label class="labelY1">Y1</label>&nbsp; &nbsp;&nbsp;<input type="number" id="y1" placeholder="Enter value of y1"
+          size="20">
+      </li>
+      <li>
+        <label class="labelX1">X2</label>&nbsp; &nbsp;&nbsp;<input type="number" id="x2" placeholder="Enter value of x2"
+          size="20">
+      </li>
+      <li>
+        <label class="labelX1">Y2</label>&nbsp; &nbsp;&nbsp;<input type="number" id="y2" placeholder="Enter value of y2"
+          size="20">
+      </li>
+      <div class="distanceDiv">
+        <label id="distanceLabel">
+          Distance
+        </label>
+        <label id="distanceResult"></label>
+      </div>
+      <button class="btnCalculate" onclick="calculateDist()">Calculate</button>
+    </ul>
+  </section>
+  <script src="calculatorJS.js" async defer></script>
+</body>
+
+</html>
